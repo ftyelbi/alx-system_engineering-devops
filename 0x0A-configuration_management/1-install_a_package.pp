@@ -1,3 +1,4 @@
+#!/usr/bin/puppet
 # Puppet manifest to install Flask version 2.1.0
 # Ensure the package resource type is available
 include apt
