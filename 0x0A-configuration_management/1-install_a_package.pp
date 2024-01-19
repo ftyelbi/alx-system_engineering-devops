@@ -1,6 +1,6 @@
-#	Puppet manifest to install Flask version 2.1.0
+# Puppet manifest to install Flask version 2.1.0
 
-#	Ensure the package resource type is available
+# Ensure the package resource type is available
 include apt
 
 #	Install Flask using pip3
@@ -20,3 +20,4 @@ exec { 'validate_flask_version':
   path    => ['/usr/bin'],
   require => Exec['install_flask'],
 }
+
