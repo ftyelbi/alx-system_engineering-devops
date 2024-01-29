@@ -13,8 +13,8 @@ frontend Innocent.Sax
 
 backend web_servers
         balance roundrobin
-        server 442842-web-01 100.26.167.104
-        server 442842-web-02 100.25.160.145
+        server 442842-web-01 100.26.167.104:80 check
+        server 442842-web-02 100.25.160.145:80 check
 ' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAproxy service
